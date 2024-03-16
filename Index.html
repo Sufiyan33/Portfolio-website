@@ -24,7 +24,7 @@
                 justify-content: space-around;
                 align-items: center;
                 height: 80px;
-                background-color: rgb(30, 30, 91);
+                background-color: rgb(19, 19, 59);
             }
             nav ul{
                 display: flex;
@@ -33,9 +33,28 @@
             nav ul li{
                 list-style: none;
                 margin: 0 23px;
+                cursor: pointer;
             }
             .left {
                 font-size: 1.5rem;
+            }
+            .firstSection{
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: 80px 0;
+            }
+            .firstSection > div{
+                width: 36%;
+            }
+            .rightSection img{
+                width: 80%;
+            }
+            .leftSection{
+                font-size: 3rem;
+            }
+            .purple{
+                color: rgb(200, 71, 200);
             }
         </style>
     </head>
@@ -54,5 +73,16 @@
                 </div>
             </nav>
         </header>
+
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">Hi, my name is <span class="purple">Sufiyan</span>
+                    <div>and I am a full <span class="purple">stack developer</span></div>
+                </div>
+                <div class="rightSection">
+                    <img src="bg.png" alt="1">
+                </div>
+            </section>
+        </main>
     </body>
 </html>
