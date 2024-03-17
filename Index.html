@@ -52,7 +52,7 @@
                 display: flex;
                 justify-content: space-around;
                 align-items: center;
-                margin: 80px 0;
+                margin: 130px 0;
             }
             .firstSection > div{
                 width: 36%;
@@ -65,6 +65,19 @@
             }
             .purple{
                 color: rgb(200, 71, 200);
+            }
+            #element{
+                color: rgb(239, 242, 245);
+            }
+            .secondSection{
+                max-width: 80vw;
+                margin: auto;
+            }
+            main hr{
+                border: 0;
+                background-color: rgb(28, 28, 93);
+                height: 1.2px;
+                margin: 40px 80px;
             }
         </style>
     </head>
@@ -87,12 +100,30 @@
         <main>
             <section class="firstSection">
                 <div class="leftSection">Hi, my name is <span class="purple">Sufiyan</span>
-                    <div>and I am a full <span class="purple">stack developer</span></div>
+                    <div>I am a full <span class="purple">stack developer.</span></div>
+                    <!-- Step 2 : Element to contain animated typing -->
+                    <span id="element"></span>
                 </div>
                 <div class="rightSection">
                     <img src="bg.png" alt="1">
                 </div>
             </section>
+            <hr>
+            <section class="secondSection">
+                <h1>Past Experience</h1>
+            </section>
         </main>
+
+        <!-- Adding here type.js for animating text-->
+        <!-- Step 1 : Load library from the CDN -->
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+        <!-- Step 3 : Setup and start animation! -->
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['AWS Certified', 'Apache kafka', 'JavaScript', 'GoLang'],
+                typeSpeed: 50,
+            });
+        </script>
     </body>
 </html>
